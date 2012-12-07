@@ -39,7 +39,7 @@ public class TestGoogleSearch {
        assertTrue("The page title should start with the search string after the search.", 
            wait.until(new ExpectedCondition<Boolean>() { 
              public Boolean apply(WebDriver d) { 
-               return d.getTitle().toLowerCase().startsWith("drupal!"); 
+               return d.getTitle().toLowerCase().startsWith("3pillar"); 
              } 
            })); 
      } 
