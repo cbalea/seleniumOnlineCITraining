@@ -1,4 +1,4 @@
-package test.java;
+package test.java.test1;
 
 import static junit.framework.Assert.assertTrue;
 
@@ -14,7 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestGoogleSearch {
+public class TestGoogleSearch1 {
 
 	private WebDriver driver;
     private WebDriverWait wait;
@@ -34,12 +34,12 @@ public class TestGoogleSearch {
      @Test
      public void pageTitleAfterSearchShouldBeginWithDrupal() throws IOException { 
        WebElement searchField = driver.findElement(By.name("q")); 
-       searchField.sendKeys("Drupal!"); 
+       searchField.sendKeys("drupal"); 
        searchField.submit(); 
        assertTrue("The page title should start with the search string after the search.", 
            wait.until(new ExpectedCondition<Boolean>() { 
              public Boolean apply(WebDriver d) { 
-               return d.getTitle().toLowerCase().startsWith("3pillar"); 
+               return d.getTitle().toLowerCase().startsWith("drupal"); 
              } 
            })); 
      } 

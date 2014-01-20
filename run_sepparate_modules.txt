@@ -1,0 +1,1 @@
+mvn -Dtest=test.java.test1.Test* test   --- runs all tests from the given package
